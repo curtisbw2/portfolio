@@ -1,0 +1,91 @@
+body {
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  h1, h2 {
+    color: #2c3e50;
+  }
+  
+  .navbar {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  footer {
+    background-color: #f8f9fa;
+    border-top: 1px solid #ddd;
+  }
+
+  .tool-icon {
+    width: 48px; /* Set a fixed width */
+    height: 48px; /* Set a fixed height */
+    object-fit: contain; /* Ensures images maintain their aspect ratio */
+    mix-blend-mode: multiply; /* Blends the image with the background */
+  }
+
+  /* Hero Section */
+.hero-section {
+    padding: 50px 0; /* Adds vertical spacing */
+  }
+  
+  /* About Section */
+  .about-section {
+    background-color: #ffffff; /* White background */
+    color: #495057; /* Slightly darker gray text */
+    padding: 50px 0;
+  }
+  
+  /* My Tool Set Section */
+.tools-section {
+    background-color: #f1f8e9; /* Light green */
+    color: #2e7d32; /* Dark green text */
+    padding: 50px 0;
+  }
+
+.tool-item {
+  display: flex;
+  align-items: center;
+  gap: 15px; /* Space between icon and text */
+  font-size: 20px; /* Bigger font */
+}
+  
+  /* My Skill Set Section */
+  .skills-section {
+    background-color: #e3f2fd; /* Light blue */
+    color: #0d47a1; /* Dark blue text */
+    padding: 50px 0;
+  }
+  
+  .skills-section ul {
+    list-style-type: none; /* Remove default bullets */
+    padding: 0;
+  }
+  
+  .skills-section ul li {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .skills-section h2 {
+    color: #0d47a1; /* Match section color */
+    font-size: 24px;
+  }
+  
+  
+  /* Make all sections span full width */
+  section {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Ensure container keeps content centered but doesn't affect full width background */
+  .container {
+    max-width: 1140px; /* Default Bootstrap container width */
+    margin: 0 auto; /* Center content */
+    padding: 0 15px; /* Default container padding */
+  }
+
+  
+  
+  
+  
