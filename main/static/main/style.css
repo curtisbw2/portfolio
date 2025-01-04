@@ -1,43 +1,79 @@
 body {
-    font-family: 'Roboto', sans-serif;
+    background-color: rgb(254, 252, 243);
+    font-family: 'Roboto Slab', serif;
+    font-weight: 1000;
+    line-height: 1.6;
+  }
+
+  p {
+    margin-bottom: 1rem;
   }
   
   h1, h2 {
-    color: #2c3e50;
+    color: #136f73;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 1000; /* Adjust to match the desired look */
   }
-  
+
+  /* Navbar Section */
   .navbar {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background-color: rgb(254, 252, 243); /* offwhite */
+  }
+
+  .navbar .nav-link {
+    color: #136f73;
+    font-weight: bold;
   }
   
   footer {
-    background-color: #f8f9fa;
-    border-top: 1px solid #ddd;
-  }
-
-  .tool-icon {
-    width: 48px; /* Set a fixed width */
-    height: 48px; /* Set a fixed height */
-    object-fit: contain; /* Ensures images maintain their aspect ratio */
-    mix-blend-mode: multiply; /* Blends the image with the background */
+    background-color: rgb(229, 134, 35);
   }
 
   /* Hero Section */
-.hero-section {
-    padding: 50px 0; /* Adds vertical spacing */
+  .hero-section {
+    padding: 100px 0; /* bigger vertical space */
+    background-color: rgb(254, 252, 243);
+    text-align: center;
   }
+
+  .hero-section h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+  }
+
+  .hero-section p.lead {
+    font-size: 1.3rem;
+    color: #555; /* subtle text color */
+  }
+
+  /* Hero Section Image Styling */
+.hero-image {
+    width: 80px; /* Adjust size */
+    height: 100px;
+    border-radius: 50%; /* Make it circular */
+    position: relative;
+    top: -20px; /* Move slightly above the text */
+    left: -20px; /* Move slightly to the left of the text */
+    margin-bottom: 10px; /* Add spacing below the image */
+}
   
   /* About Section */
-  .about-section {
-    background-color: #ffffff; /* White background */
-    color: #495057; /* Slightly darker gray text */
-    padding: 50px 0;
+  .about-section img {
+    border-radius: 10px; /* or 50% for a circle */
+    margin-bottom: 20px;
   }
   
   /* My Tool Set Section */
+  .tools-section h2 {
+    text-align: left;
+    color: white;
+    font-size: 48px
+}
+
 .tools-section {
-    background-color: #f1f8e9; /* Light green */
-    color: #2e7d32; /* Dark green text */
+    background-color: rgb(229, 134, 35); /* Light green */
+    color: rgb(255, 255, 255); /* Dark green text */
     padding: 50px 0;
   }
 
@@ -45,29 +81,48 @@ body {
   display: flex;
   align-items: center;
   gap: 15px; /* Space between icon and text */
-  font-size: 20px; /* Bigger font */
+  font-size: 28px; /* Bigger font */
+  margin-bottom: 10px;
+  }
+
+.tool-icon {
+    width: 48px; /* Set a fixed width */
+    height: 48px; /* Set a fixed height */
+    object-fit: contain; /* Ensures images maintain their aspect ratio */
+    mix-blend-mode: inherit; /* Blends the image with the background */
+  }
+
+/* Center align text */
+.tool-item span {
+    text-align: center;
+    display: block;
 }
   
   /* My Skill Set Section */
+  .skills-section h2 {
+    text-align: left;
+    color: white;
+    font-size: 48px
+}
+  
   .skills-section {
-    background-color: #e3f2fd; /* Light blue */
-    color: #0d47a1; /* Dark blue text */
+    background-color: rgb(2, 84, 100); /* Dark blue */
+    color: rgb(255, 255, 255); /* White */
     padding: 50px 0;
   }
   
   .skills-section ul {
     list-style-type: none; /* Remove default bullets */
+    margin-bottom: 10px;
     padding: 0;
   }
   
   .skills-section ul li {
-    font-size: 18px;
+    font-size: 28px;
     margin-bottom: 10px;
   }
-  
-  .skills-section h2 {
-    color: #0d47a1; /* Match section color */
-    font-size: 24px;
+
+  .projects-section {
   }
   
   
@@ -84,6 +139,7 @@ body {
     margin: 0 auto; /* Center content */
     padding: 0 15px; /* Default container padding */
   }
+  
 
   
   

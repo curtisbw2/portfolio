@@ -1,5 +1,10 @@
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Lobster', sans-serif;
+    background-image: url("{% static 'main/images/xD.gif' %}");
+    background-size: cover; /* Ensures the image covers the entire page */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-attachment: fixed; /* Keeps the background fixed while scrolling */
+    background-position: center; /* Centers the image */
   }
   
   h1, h2 {
@@ -8,18 +13,12 @@ body {
   
   .navbar {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background-color: rgb(254, 252, 243); /* offwhite */
   }
   
   footer {
-    background-color: #f8f9fa;
-    border-top: 1px solid #ddd;
-  }
-
-  .tool-icon {
-    width: 48px; /* Set a fixed width */
-    height: 48px; /* Set a fixed height */
-    object-fit: contain; /* Ensures images maintain their aspect ratio */
-    mix-blend-mode: multiply; /* Blends the image with the background */
+    background-color: rgb(229, 134, 35);
+    border-top: 1px solid rgb(0, 0, 0);
   }
 
   /* Hero Section */
@@ -29,7 +28,6 @@ body {
   
   /* About Section */
   .about-section {
-    background-color: #ffffff; /* White background */
     color: #495057; /* Slightly darker gray text */
     padding: 50px 0;
   }
@@ -46,7 +44,14 @@ body {
   align-items: center;
   gap: 15px; /* Space between icon and text */
   font-size: 20px; /* Bigger font */
-}
+  }
+
+.tool-icon {
+    width: 48px; /* Set a fixed width */
+    height: 48px; /* Set a fixed height */
+    object-fit: contain; /* Ensures images maintain their aspect ratio */
+    mix-blend-mode: multiply; /* Blends the image with the background */
+  }
   
   /* My Skill Set Section */
   .skills-section {
@@ -68,6 +73,9 @@ body {
   .skills-section h2 {
     color: #0d47a1; /* Match section color */
     font-size: 24px;
+  }
+
+  .projects-section {
   }
   
   
