@@ -32,10 +32,6 @@ body {
     color: #136f73;
     font-weight: bold;
   }
-  
-  footer {
-    background-color: rgb(229, 134, 35);
-  }
 
   /* Hero Section */
   .hero-section {
@@ -174,8 +170,9 @@ body {
     flex: 1 1 200px;
 }
 
-  /*.projects-section {
-  }*/
+  .projects-section h2 {
+    font-size: 48px;
+  }
   
   
   /* Make all sections span full width */
@@ -192,7 +189,36 @@ body {
     padding: 0 15px; /* Default container padding */
   }
 
-  /* Footer Section */
+  footer {
+    background-color: rgb(229, 134, 35);
+  }
+
+  .footer-section {
+    min-height: 96px;
+    display: flex; /* Enables Flexbox */
+    align-items: center; /* Centers items vertically */
+    justify-content: center; /* Centers items horizontally */
+    text-align: center; /* Ensures the text (if any) is centered */
+  }
+  
+  .footer-section a {
+    text-decoration: none; /* Remove underline */
+    color: inherit; /* Inherit parent color */
+  }
+  
+  .footer-section a i {
+    color: white; /* Set default icon color */
+    transition: color 0.3s ease; /* Smooth transition on hover */
+  }
+  
+  .footer-section a i:hover {
+    color: rgb(2, 84, 100); /* Change color on hover */
+  }
+
+.footer-icon {
+  margin: 0 30px; /* Adjust horizontal spacing as needed */
+}
+
 .footer2-section {
   background-color: rgb(254, 252, 243);
   color: white; /* White text */
@@ -220,19 +246,22 @@ body {
 }
 
 .footer2-btn:focus {
-  outline: none; /* Remove focus outline */
+  outline: none;
 }
 
 .footer2-section a i {
-  color: rgb(2, 84, 100); /* keep icons white */
+  color: rgb(2, 84, 100);
   transition: color 0.3s ease;
 }
 
 .footer2-section a i:hover {
-  color: #ca1313; /* slightly lighter on hover, if you like */
+  color: rgb(229, 134, 35);
 }
 
-  
+.footer2-section .footer2-btn,
+.footer2-section a i {
+  margin: 0 0; /* Adjust horizontal spacing as needed */
+}
 
   
   
