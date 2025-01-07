@@ -222,7 +222,6 @@ body {
 .footer2-section {
   background-color: rgb(254, 252, 243);
   color: white; /* White text */
-  padding: 20px 0; /* Add vertical spacing */
 }
 
 .footer2-section a {
@@ -262,6 +261,7 @@ body {
 .footer2-section a i {
   margin: 0 0; /* Adjust horizontal spacing as needed */
 }
+
 
   
   
