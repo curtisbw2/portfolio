@@ -19,23 +19,55 @@ body {
   h1, h2 {
     color: rgb(2, 84, 100);
     font-family: 'Roboto Slab', serif;
-    font-weight: 1000; /* Adjust to match the desired look */
+    font-weight: 1000;
   }
 
   /* Navbar Section */
   .navbar {
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: none;
+    transition: box-shadow 0.3s ease-in-out;
     background-color: rgb(254, 252, 243); /* offwhite */
   }
 
   .navbar .nav-link {
-    color: #136f73;
+    color: rgb(2, 84, 100);
     font-weight: bold;
   }
 
+  /* Default: No shadow */
+.no-shadow {
+  box-shadow: none;
+  transition: box-shadow 0.3s ease-in-out; /* Smooth transition */
+}
+
+/* Add shadow on scroll */
+.navbar-shadow {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Underline and color for active link */
+.navbar .nav-link.active {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  color: rgb(2, 84, 100);
+  font-weight: bold;
+}
+
+/* Underline and color on hover */
+.navbar .nav-link:hover {
+  text-decoration: underline; /* Underline on hover */
+  text-underline-offset: 4px;
+  color: rgb(2, 84, 100);
+}
+
+/* Optional: Transition for smooth hover effect */
+.navbar .nav-link {
+  transition: text-decoration 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
   /* Hero Section */
   .hero-section {
-    padding: 100px 0; /* bigger vertical space */
+    padding: 100px 0;
     background-color: rgb(254, 252, 243);
     text-align: center;
   }
@@ -184,9 +216,9 @@ body {
   
   /* Ensure container keeps content centered but doesn't affect full width background */
   .container {
-    max-width: 1140px; /* Default Bootstrap container width */
-    margin: 0 auto; /* Center content */
-    padding: 0 15px; /* Default container padding */
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 15px;
   }
 
   footer {
@@ -195,37 +227,37 @@ body {
 
   .footer-section {
     min-height: 96px;
-    display: flex; /* Enables Flexbox */
-    align-items: center; /* Centers items vertically */
-    justify-content: center; /* Centers items horizontally */
-    text-align: center; /* Ensures the text (if any) is centered */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
   }
   
   .footer-section a {
-    text-decoration: none; /* Remove underline */
-    color: inherit; /* Inherit parent color */
+    text-decoration: none; 
+    color: inherit;
   }
   
   .footer-section a i {
-    color: white; /* Set default icon color */
-    transition: color 0.3s ease; /* Smooth transition on hover */
+    color: white;
+    transition: color 0.3s ease;
   }
   
   .footer-section a i:hover {
-    color: rgb(2, 84, 100); /* Change color on hover */
+    color: rgb(2, 84, 100); 
   }
 
 .footer-icon {
-  margin: 0 30px; /* Adjust horizontal spacing as needed */
+  margin: 0 30px;
 }
 
 .footer2-section {
   background-color: rgb(254, 252, 243);
-  color: white; /* White text */
+  color: white;
 }
 
 .footer2-section a {
-  text-decoration: none; /* Remove underline */
+  text-decoration: none;
 }
 
 .footer2-btn {
@@ -259,11 +291,92 @@ body {
 
 .footer2-section .footer2-btn,
 .footer2-section a i {
-  margin: 0 0; /* Adjust horizontal spacing as needed */
+  margin: 0 0;
 }
 
+/* Contact Section */
+.contact-section {
+  min-height: 100vh;
+  padding: 2rem 0; 
+}
 
-  
-  
-  
-  
+/* Contact logos (Python, Power BI, etc.) */
+.contact-logo {
+  width: 80px; 
+  height: 80px;
+  object-fit: contain;
+  display: inline-block;
+}
+
+/* Form styling overrides if you wish */
+.contact-section .form-label {
+  font-weight: bold;
+  color: rgb(2, 84, 100);
+}
+
+.contact-section .form-control {
+  border-radius: 0;
+  border: 2px solid rgb(2, 84, 100);
+}
+
+.contact-section button.btn-primary {
+  background-color: rgb(2, 84, 100);
+  border: none;
+}
+
+.contact-section button.btn-primary:hover {
+  background-color: rgb(229, 134, 35);
+  transform: scale(1.05);
+  transition: all 0.3s ease;
+}
+
+.contact-icon {
+  color: rgb(2, 84, 100);
+  margin-right: 30px;
+  transition: color 0.3s ease, transform 0.2s ease;
+  text-decoration: none;
+}
+
+.contact-icon:hover {
+  color: rgb(229, 134, 35);
+  transform: scale(1.1);
+}
+
+.contact-section h1 {
+  font-size: 4rem;
+  font-weight: bold;
+  color: rgb(2, 84, 100);
+  text-align: left; 
+  margin-bottom: 20px;
+}
+
+/* Logos (e.g., Python, Power BI, etc.) */
+.contact-logo {
+  width: 80px;
+  height: 80px;
+  object-fit: contain; 
+  margin: 10px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.contact-logo:hover {
+  transform: scale(1.1);
+}
+
+/* Contact Logos - Two Columns */
+.contact-item {
+  width: 120px;
+  height: 100px;
+  object-fit: contain;
+  margin: 10px 0;
+  text-align: center;
+}
+
+/* Right Alignment for Logos Section */
+.contact-section .col-md-6:last-child {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  padding-left: 20px;
+}
+
